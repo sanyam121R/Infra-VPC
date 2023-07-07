@@ -7,22 +7,17 @@ output "security_groups" {
 }
 
 output "pub_subnets" {
-  value = module.vpc.pub_subnets
+  value     = module.vpc.pub_subnets
   sensitive = true
 }
 
 output "prv_subnets" {
-  value = module.vpc.prv_subnets
+  value     = module.vpc.prv_subnets
   sensitive = true
 }
 
 output "s3_bucket" {
   value = module.s3.s3_bucket
-}
-
-
-output "" {
-  
 }
 
 /*
